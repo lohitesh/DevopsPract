@@ -1,4 +1,5 @@
 #include<stdio.h>
+void fact();
 void fact()
 {
   int i,num,fact=1;

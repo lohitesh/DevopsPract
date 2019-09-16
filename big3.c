@@ -1,4 +1,5 @@
 #include<stdio.h>
+void big();
 void big()
 {
   int a,b,c;

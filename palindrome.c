@@ -1,4 +1,5 @@
 #include<stdio.h>
+void pal();
 void pal()
 {
 	int num,digit,rev=0,temp;
