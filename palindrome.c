@@ -7,7 +7,7 @@ void pal()
 	temp=num;
 	while(num>0)
 	{ 	digit=num%10;
-		rev-(rev*10)+digit;
+		rev=(rev*10)+digit;
 		num=num/10;
 	}
 	if(temp==rev)
