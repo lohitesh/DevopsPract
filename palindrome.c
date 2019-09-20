@@ -12,8 +12,12 @@ void pal()
 		num=num/10;
 	}
 	if(temp==rev)
+	{
 		printf("\n%d is a palindrome\n",temp);
+	}
 	else
+	{
   		printf("\n%d is not a palindrome\n",temp);
+	}
 }
   
