@@ -1,3 +1,5 @@
+
+//Function to find biggest of three numberes
 #include<stdio.h>
 void big();
 void big()
