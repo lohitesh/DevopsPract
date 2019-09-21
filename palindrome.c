@@ -11,6 +11,7 @@ void pal()
 		rev=(rev*10)+digit;
 		num=num/10;
 	}
+	printf("The reverse of the number is %d\n",rev);
 	if(temp==rev)
 	{
 		printf("\n%d is a palindrome\n",temp);
