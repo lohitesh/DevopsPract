@@ -11,5 +11,7 @@ void fact()
     printf("\nThe factorial of a number is %d\n",fact);
   }
   else
+  {
   printf("\nPlease enter the number greater than 0\n");
+  }
 }
