@@ -26,7 +26,7 @@ pipeline {
 				echo "DEPLOYING FILES"
 				echo "*****************************"
 				sh 'pwd'
-				sh 'cp ./ABC.exe /home/ubuntu/dev/'
+				sh 'cp abc.exe /home/ubuntu/dev/'
 			}
 		}
 
