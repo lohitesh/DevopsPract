@@ -23,7 +23,7 @@ pipeline {
 				echo "*****************************"
 				echo "DEPLOYING FILES"
 				echo "*****************************"
-				sh 'cp ABC.exe /home/ubuntu/dev/'
+				sh 'cp ./ABC.exe /home/ubuntu/dev/'
 			}
 		}
 
