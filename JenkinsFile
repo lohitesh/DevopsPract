@@ -1,0 +1,11 @@
+pipeline {
+	agent any
+	
+	stages {
+		stage ('Remove Object Files') {
+			steps {
+				sh `make clean`
+			}
+		}
+	}
+}
