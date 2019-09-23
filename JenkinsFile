@@ -15,7 +15,7 @@ pipeline {
 				echo "*****************************"
 				echo "CREATING EXE FILES"
 				echo "*****************************"
-				sh 'build.sh'
+				sh './build.sh'
 			}
 		}
 
