@@ -2,10 +2,22 @@ pipeline {
 	agent any
 	
 	stages {
-		stage ('Remove Object Files') {
+		stage ('CLEANING STAGE') {
 			steps {
+				echo "******************************"
+				echo "REMOVING OBJECT AND EXE FILES"
+				echo "******************************"
 				sh 'make clean'
 			}
 		}
+		stage ('BUILD') {
+			steps {
+				echo "*****************************"
+				echo "CREATING EXE FILES"
+				echo "*****************************"
+				sh 'build.sh'
+			}
+		}
+
 	}
 }
