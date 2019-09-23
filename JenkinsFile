@@ -16,6 +16,8 @@ pipeline {
 				echo "CREATING EXE FILES"
 				echo "*****************************"
 				sh './build.sh'
+				'pwd'
+				'ls'
 			}
 		}
 		stage ('DEPLOY') {
@@ -23,6 +25,7 @@ pipeline {
 				echo "*****************************"
 				echo "DEPLOYING FILES"
 				echo "*****************************"
+				'pwd'
 				sh 'cp ./ABC.exe /home/ubuntu/dev/'
 			}
 		}
