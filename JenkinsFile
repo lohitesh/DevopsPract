@@ -2,8 +2,8 @@ pipeline {
 	agent none
 	
 	stages {
-		agent { label 'slave1' }
 		stage ('CLEANING STAGE') {
+			agent { label 'slave1' }
 			steps {
 				echo "******************************"
 				echo "REMOVING OBJECT AND EXE FILES"
