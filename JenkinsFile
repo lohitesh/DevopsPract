@@ -1,7 +1,8 @@
 pipeline {
-	agent any
+	agent none
 	
 	stages {
+		agent { label 'slave1' }
 		stage ('CLEANING STAGE') {
 			steps {
 				echo "******************************"
@@ -11,6 +12,7 @@ pipeline {
 			}
 		}
 		stage ('BUILD') {
+			agent { label 'slave2' }
 			steps {
 				echo "*****************************"
 				echo "CREATING EXE FILES"
@@ -21,6 +23,7 @@ pipeline {
 			}
 		}
 		stage ('DEPLOY') {
+			agent { label 'slave1' }
 			steps {
 				echo "*****************************"
 				echo "DEPLOYING FILES"
