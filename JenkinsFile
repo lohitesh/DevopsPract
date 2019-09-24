@@ -3,12 +3,12 @@ pipeline {
 	
 	stages {
 		stage ('CLEANING STAGE') {
-			agent { label 'slave1' }
+			agent { label 'slave2' }
 			steps {
 				echo "******************************"
 				echo "REMOVING OBJECT AND EXE FILES"
 				echo "******************************"
-				sh 'make clean'
+				//sh 'make clean'
 			}
 		}
 		stage ('BUILD') {
@@ -17,13 +17,13 @@ pipeline {
 				echo "*****************************"
 				echo "CREATING EXE FILES"
 				echo "*****************************"
-				sh './build.sh'
-				sh 'pwd'
-				sh 'ls'
+				//sh './build.sh'
+				//sh 'pwd'
+				//sh 'ls'
 			}
 		}
 		stage ('DEPLOY') {
-			agent { label 'slave1' }
+			agent { label 'master' }
 			steps {
 				echo "*****************************"
 				echo "DEPLOYING FILES"
