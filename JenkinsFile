@@ -17,6 +17,7 @@ pipeline {
 				echo "*****************************"
 				echo "CREATING EXE FILES"
 				echo "*****************************"
+				echo "SIMPLY WE CREATE EXE FILES FOR TESTING"
 				//sh './build.sh'
 				//sh 'pwd'
 				//sh 'ls'
